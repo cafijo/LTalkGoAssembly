@@ -42,13 +42,6 @@ func main() {
 		if err != nil {
 			return
 		}
-		// var price = doc.Find("#hprt-table > tbody > tr.hprt-table-cheapest-block.hprt-table-cheapest-block-fix.js-hprt-table-cheapest-block > td.d_pd_hp_price_left_align.hprt-table-cell.hprt-table-cell-price > div > div > div:nth-child(1) > div:nth-child(2) > span")
-		// var price = doc.Find("#hprt-table > tbody > tr.hprt-table-cheapest-block.hprt-table-cheapest-block-fix.js-hprt-table-cheapest-block > td.d_pd_hp_price_left_align.hprt-table-cell.hprt-table-cell-price > div > div > div.bui-panel.bui-u-hidden.prco-price-area-popover > div > div > div.bui-grid__column-4 > div")
-
-		// hidenBody := doc.Find("#hprt-table > tbody > tr.js-rt-block-row.e2e-hprt-table-row.hprt-table-cheapest-block.hprt-table-cheapest-block-fix.js-hprt-table-cheapest-block > td.hp-price-left-align.hprt-table-cell.hprt-table-cell-price > div > div.prco-wrapper.bui-price-display.prco-sr-default-assembly-wrapper > div:nth-child(1)")
-		// id, _ := hidenBody.Attr("data-popover-content-id")
-
-		// pathid := "#" + id + " > div > div:nth-child(5) > div.bui-grid__column-5 > div"
 		pathid := "#hprt-table > tbody > tr.js-rt-block-row.e2e-hprt-table-row.hprt-table-cheapest-block.hprt-table-cheapest-block-fix.js-hprt-table-cheapest-block > td.hp-price-left-align.hprt-table-cell.hprt-table-cell-price > div > div > div:nth-child(1) > div:nth-child(2) > div > span"
 		price := doc.Find(pathid)
 		var children = price.Text()
